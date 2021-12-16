@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import RegionGrowing as RG
 
-seed = RG.RGPoint(389,256)
+seed = RG.RGPoint(0, 0)
 
 def on_mouse(event, x, y, flags, params):
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -13,7 +13,7 @@ def on_mouse(event, x, y, flags, params):
 
 
 #import Image
-im = cv2.imread('215.jpg',cv2.IMREAD_GRAYSCALE)
+im = cv2.imread('1.jpg',cv2.IMREAD_GRAYSCALE)
 im_shape = im.shape
 height = im_shape[0]
 width = im_shape[1]
